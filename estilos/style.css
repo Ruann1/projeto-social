@@ -35,9 +35,30 @@ section#celular{
     background: url(../imagens/frame-iphone.png) no-repeat;
 }
 
-iframe{
-
+#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 268px;
+    height: 471px;
 }
 
+section#social{
+    text-align: right;
+}
 
+section#social img{
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%; /* Comando responsável por tornar os icones que são imagens quadradas em circulos */
+    box-shadow: 2px 2px 5px rgba(7, 7, 7, 0.411);
+    box-sizing: border-box; /* Esse comando faz com que os icones não saiam do lugar quando você passa o mouse por cima do icone */
+}
+
+section#social img:hover{ /* tudo que é feito aqui tem relação ao efeito do passar do mouse em cima dos icones */
+     border: 2px solid rgb(255, 255, 255); /*borda interna */
+     transform: translate(-5px, -5px); /*ativa a animação dos icones ao passar o mouse */
+     transition: transform .4s, border .5s; /* Efeito de transição dos botões */
+     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.521); 
+}
     
